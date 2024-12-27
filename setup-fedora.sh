@@ -55,6 +55,7 @@ packages=(
     "rsync"
     "git"
     "figlet"
+    
 )
 
 latest_version=$(get_latest_release)
