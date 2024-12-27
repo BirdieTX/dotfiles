@@ -55,7 +55,8 @@ packages=(
     "rsync"
     "git"
     "figlet"
-    
+    "zfs-fuse"
+    "xhost"
 )
 
 latest_version=$(get_latest_release)
