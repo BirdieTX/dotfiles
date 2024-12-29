@@ -50,4 +50,8 @@ packages=(
     "NetworkManager-tui"
     "nwg-dock-hyprland"
     "oh-my-posh"
+    "nwg-panel"
+    "light"
+    "zfs-fuse"
+    "xhost"
 );
