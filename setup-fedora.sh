@@ -136,11 +136,11 @@ version=$(gum choose "main-release" "rolling-release" "cancel")
 if [ "$version" == "main-release" ]; then
     echo ":: Installing Main Release"
     echo
-    git clone --branch $latest_version --depth 1 https://github.com/BirdieTX/dotfiles/tree/birdie/ml4w-testing.git ~/Downloads/dotfiles
+    git clone --branch birdie/ml4w-testing --depth 1 https://github.com/BirdieTX/dotfiles.git ~/Downloads/dotfiles
 elif [ "$version" == "rolling-release" ]; then
     echo ":: Installing Rolling Release"
     echo
-    git clone --depth 1 https://github.com/BirdieTX/dotfiles/tree/birdie/ml4w-testing.git ~/Downloads/dotfiles
+    git clone --depth 1 --branch birdie/ml4w-testing https://github.com/BirdieTX/dotfiles.git ~/Downloads/dotfiles
 elif [ "$version" == "cancel" ]; then
     echo ":: Setup canceled"
     exit 130    
